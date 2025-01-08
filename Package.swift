@@ -18,8 +18,8 @@ let package = Package(
         .binaryTarget(
             name: "SwiftProtobuf",
             url: "https://github.com/trustwallet/wallet-core/releases/download/4.1.21/SwiftProtobuf.xcframework.zip",
-            checksum: "f6da2b8fafdce5e8d46ea305972f1ad942cc796f63026a32c883331dd3813285"
+            checksum: "f6da2b8fafdce5e8d46ea305972f1ad942cc796f63026a32c883331dd3813285",
+            moduleAliases: ["SwiftProtobuf": "WalletCoreProtobuf"] // Add module alias here
         )
-    ],
-    moduleAliases: ["SwiftProtobuf": "WalletCoreProtobuf"] // Add this line
+    ]
 )
