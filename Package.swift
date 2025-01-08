@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -20,5 +20,6 @@ let package = Package(
             url: "https://github.com/trustwallet/wallet-core/releases/download/4.1.21/SwiftProtobuf.xcframework.zip",
             checksum: "f6da2b8fafdce5e8d46ea305972f1ad942cc796f63026a32c883331dd3813285"
         )
-    ]
+    ],
+    moduleAliases: ["SwiftProtobuf": "WalletCoreProtobuf"] // Add this line
 )
